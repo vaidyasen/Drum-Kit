@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <video autoplay muted loop  id="wallpaper">
+        <source src="./assets/images/video_wallpaper.mp4" type="video/mp4">    
+    </video>
+    <div class="keys">
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">Hello</span>
+        </div>
+        <div data-key="66" class="key">
+            <kbd>B</kbd>
+            <span class="sound">Thank You</span>
+        </div>
+        <div data-key="67" class="key">
+            <kbd>C</kbd>
+            <span class="sound">Excuse Me</span>
+        </div>
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">Please</span>
+        </div>
+        <div data-key="69" class="key">
+            <kbd>E</kbd>
+            <span class="sound">Good Bye</span>
+        </div>
+        <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">That's Good</span>
+        </div>
+        <div data-key="71" class="key">
+            <kbd>G</kbd>
+            <span class="sound">Nice To Meet You</span>
+        </div>
+        <div data-key="72" class="key">
+            <kbd>H</kbd>
+            <span class="sound">I Love You</span>
+        </div>
+        <div data-key="73" class="key">
+            <kbd>I</kbd>
+            <span class="sound">Yes</span>
+        </div>
+        <div data-key="74" class="key">
+            <kbd>J</kbd>
+            <span class="sound">No</span>
+        </div>
+        <div data-key="75" class="key">
+            <kbd>K</kbd>
+            <span class="sound">Congratulations</span>
+        </div>
+        <div data-key="76" class="key">
+            <kbd>L</kbd>
+            <span class="sound">I'm Sorry</span>
+        </div>
+        <div data-key="77" class="key">
+            <kbd>M</kbd>
+            <span class="sound">I am from..</span>
+        </div>
+        <div data-key="78" class="key">
+            <kbd>N</kbd>
+            <span class="sound">What is your name?</span>
+        </div>
+        <div data-key="79" class="key">
+            <kbd>O</kbd>
+            <span class="sound">My Name is ..</span>
+        </div>
+        <div data-key="80" class="key">
+            <kbd>P</kbd>
+            <span class="sound">Beautiful</span>
+        </div>
+        <div data-key="81" class="key">
+            <kbd>Q</kbd>
+            <span class="sound">Delicious</span>
+        </div>
+        <div data-key="82" class="key">
+            <kbd>R</kbd>
+            <span class="sound">I Like It</span>
+        </div>
+        <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">What</span>
+        </div>
+        <div data-key="84" class="key">
+            <kbd>T</kbd>
+            <span class="sound">I Humbly receive(Said Before Eating Meal)</span>
+        </div>
+        <div data-key="85" class="key">
+            <kbd>U</kbd>
+            <span class="sound">Welcome</span>
+        </div>
+        <div data-key="86" class="key">
+            <kbd>V</kbd>
+            <span class="sound">Good Morning</span>
+        </div>
+        <div data-key="87" class="key">
+            <kbd>W</kbd>
+            <span class="sound">Good Evening</span>
+        </div>
+        <div data-key="88" class="key">
+            <kbd>X</kbd>
+            <span class="sound">See You Later</span>
+        </div>
+        <div data-key="89" class="key">
+            <kbd>Y</kbd>
+            <span class="sound">Thank You Very Much</span>
+        </div>
+        <div data-key="90" class="key">
+            <kbd>Z</kbd>
+            <span class="sound">You're Welcome</span>
+        </div>
+    </div>
+
+    <audio data-key="65" src="assets/sounds/hello.mp3"></audio>
+    <audio data-key="66" src="assets/sounds/thankYou.mp3"></audio>
+    <audio data-key="67" src="assets/sounds/ExcuseMe.mp3"></audio>
+    <audio data-key="68" src="assets/sounds/Please.mp3"></audio>
+    <audio data-key="69" src="assets/sounds/GoodBye.mp3"></audio>
+    <audio data-key="70" src="assets/sounds/That'sGood.mp3"></audio>
+    <audio data-key="71" src="assets/sounds/NiceToMeetYou.mp3"></audio>
+    <audio data-key="72" src="assets/sounds/ILoveYou.mp3"></audio>
+    <audio data-key="73" src="assets/sounds/Yes.mp3"></audio>
+    <audio data-key="74" src="assets/sounds/No.mp3"></audio>
+    <audio data-key="75" src="assets/sounds/Congratulations.mp3"></audio>
+    <audio data-key="76" src="assets/sounds/I'mSorry.mp3"></audio>
+    <audio data-key="77" src="assets/sounds/Iamfrom...mp3"></audio>
+    <audio data-key="78" src="assets/sounds/Whatisyourname.mp3"></audio>
+    <audio data-key="79" src="assets/sounds/MyNameis...mp3"></audio>
+    <audio data-key="80" src="assets/sounds/Beautiful.mp3"></audio>
+    <audio data-key="81" src="assets/sounds/Delicious.mp3"></audio>
+    <audio data-key="82" src="assets/sounds/ILikeIt.mp3"></audio>
+    <audio data-key="83" src="assets/sounds/What.mp3"></audio>
+    <audio data-key="84" src="assets/sounds/SaidBeforeEatingMeal.mp3"></audio>
+    <audio data-key="85" src="assets/sounds/Welcome.mp3"></audio>
+    <audio data-key="86" src="assets/sounds/GoodMorning.mp3"></audio>
+    <audio data-key="87" src="assets/sounds/GoodEvening.mp3"></audio>
+    <audio data-key="88" src="assets/sounds/SeeYouLater.mp3"></audio>
+    <audio data-key="89" src="assets/sounds/ThankYouVeryMuch.mp3"></audio>
+    <audio data-key="90" src="assets/sounds/You'reWelcome.mp3"></audio>
+   
+   
+   <script>
+        function removeTransition(e) {
+          if (e.propertyName !== 'transform') return;
+          e.target.classList.remove('playing');
+        }
+      
+        function playSound(e) {
+          const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+          const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+          if (!audio) return;
+      
+          key.classList.add('playing');
+          audio.currentTime = 0;
+          audio.play();
+        }
+      
+        const keys = Array.from(document.querySelectorAll('.key'));
+        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+        window.addEventListener('keydown', playSound);
+      </script>
+
+
+</body>
+
+</html>
